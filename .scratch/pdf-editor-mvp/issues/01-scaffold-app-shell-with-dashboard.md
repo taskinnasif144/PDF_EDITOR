@@ -4,10 +4,10 @@
 
 **Blocked by:** None (can start immediately).
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] Dashboard renders at the root route with working links to all three tool routes
-- [ ] Smoke test passes in Vitest; `npm run build` succeeds
-- [ ] CSP meta tag present (`default-src 'self'; script-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'none'`)
-- [ ] All dependencies installed at exact pinned versions with lockfile committed
-- [ ] Strict TypeScript mode enabled
+- [x] Dashboard renders at the root route with working links to all three tool routes
+- [x] Smoke test passes in Vitest; `npm run build` succeeds
+- [x] CSP meta tag present (`default-src 'self'; script-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'none'`)
+- [x] All dependencies installed at exact pinned versions with lockfile committed
+- [x] Strict TypeScript mode enabled
