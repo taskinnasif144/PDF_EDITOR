@@ -4,12 +4,12 @@
 
 **Blocked by:** 02.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] Plain fixture loads: correct page count, `wasEncrypted=false`, original bytes retained (no re-save pass)
-- [ ] Encrypted fixture without password → password-required error
-- [ ] Encrypted fixture with correct password → loads decrypted, `wasEncrypted=true` (including a non-ASCII password)
-- [ ] Wrong password → password error, never a successful-looking garbage document (probe enforced)
-- [ ] Truncated fixture and text-as-.pdf fixture → friendly load error, not a crash
-- [ ] Loader copies input bytes at its boundary (callers' buffers stay immutable); aborted signal rejects
-- [ ] Integration tests run in Node against the real PDF library
+- [x] Plain fixture loads: correct page count, `wasEncrypted=false`, original bytes retained (no re-save pass)
+- [x] Encrypted fixture without password → password-required error
+- [x] Encrypted fixture with correct password → loads decrypted, `wasEncrypted=true` (including a non-ASCII password)
+- [x] Wrong password → password error, never a successful-looking garbage document (probe enforced)
+- [x] Truncated fixture and text-as-.pdf fixture → friendly load error, not a crash
+- [x] Loader copies input bytes at its boundary (callers' buffers stay immutable); aborted signal rejects
+- [x] Integration tests run in Node against the real PDF library
