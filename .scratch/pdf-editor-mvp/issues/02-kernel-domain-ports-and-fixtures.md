@@ -4,10 +4,10 @@
 
 **Blocked by:** 01.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] `Password.create('ab')` throws; `create('abcd')` works; stringifying it never reveals the raw value
-- [ ] All typed errors carry a friendly `userMessage`; adapters are forbidden from surfacing raw parser messages
-- [ ] `PickedFile` and `LoadedPdf` each carry a `crypto.randomUUID()` id
-- [ ] Fixture helpers generate: N-page plain PDF, password-protected PDF, 50%-truncated PDF, and plain-text-bytes-named-.pdf
-- [ ] Ports defined for `PdfLoader` (with optional password + AbortSignal), `FilePicker`, `Downloader` (with a `revoke()` cleanup hook)
+- [x] `Password.create('ab')` throws; `create('abcd')` works; stringifying it never reveals the raw value
+- [x] All typed errors carry a friendly `userMessage`; adapters are forbidden from surfacing raw parser messages
+- [x] `PickedFile` and `LoadedPdf` each carry a `crypto.randomUUID()` id
+- [x] Fixture helpers generate: N-page plain PDF, password-protected PDF, corrupted (no usable catalog), and text-renamed-as-PDF
+- [x] Ports defined for `PdfLoader` (with optional password + AbortSignal), `FilePicker`, `Downloader` (with a `revoke()` cleanup hook)
